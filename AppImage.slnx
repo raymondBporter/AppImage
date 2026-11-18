@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="App2d.ImageLab/App2d.ImageLab.csproj" />
+  <Project Path="App2d.ImageLab.Tests/App2d.ImageLab.Tests.csproj" />
+</Solution>

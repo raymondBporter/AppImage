@@ -1,0 +1,34 @@
+[*.cs]
+
+# Construct runtime shapes and curves through their validating builders.
+dotnet_diagnostic.APP2D001.severity = warning
+
+# Report boxing conversions of vector values.
+dotnet_diagnostic.APP2D002.severity = warning
+
+# Keep vectors out of interface-typed declarations.
+dotnet_diagnostic.APP2D003.severity = warning
+
+# Copy or convert vectors whole instead of rebuilding them from components.
+dotnet_diagnostic.APP2D004.severity = warning
+
+# Use vector operators instead of component-wise arithmetic.
+dotnet_diagnostic.APP2D005.severity = warning
+
+# IDE0048: Add parentheses for clarity
+dotnet_diagnostic.IDE0048.severity = none
+
+# RCS1123: Add parentheses when necessary
+dotnet_diagnostic.RCS1123.severity = none
+
+# Duplicate code findings remain visible as warnings.
+dotnet_diagnostic.PH2071.severity = warning
+dotnet_code_quality.PH2071.token_count=200
+
+[*.json]
+indent_style = space
+indent_size = 2
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true

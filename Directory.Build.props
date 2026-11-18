@@ -1,0 +1,11 @@
+<Project>
+  <PropertyGroup>
+    <ShouldUnsetParentConfigurationAndPlatform>false</ShouldUnsetParentConfigurationAndPlatform>
+    <!-- Override with -p:App2dRoot=C:/path/to/App2d for a different checkout layout. -->
+    <App2dRoot Condition="'$(App2dRoot)' == ''">$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)../App2d'))</App2dRoot>
+  </PropertyGroup>
+  <Import Project="$(App2dRoot)/Directory.Build.props" />
+  <ItemGroup>
+    <AssemblyMetadata Include="App2dRoot" Value="$(App2dRoot)" />
+  </ItemGroup>
+</Project>
